@@ -20,8 +20,8 @@ Containers
 Slave container really only needs to be built and not run up as Jenkins runs it up on demand.
 
 
-Run it up it get initial Jenkins admin password
------------------------------------------------
+Run it up and get initial Jenkins admin password
+------------------------------------------------
 - docker-compose build
 - docker-compose up -d data master nginx socat
 - docker-compose exec master cat /var/jenkins_home/secrets/initialAdminPassword
